@@ -23,15 +23,6 @@ return {
   },
 
   {
-    "williamboman/mason.nvim",
-    opts = {
-      ensure_installed = {
-        "typescript-language-server"
-      },
-    }
-  },
-
-  {
   	"nvim-treesitter/nvim-treesitter",
   	opts = {
   		ensure_installed = {
