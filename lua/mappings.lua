@@ -1,3 +1,5 @@
+require "nvchad.mappings"
+
 local dap = require("dap")
 local dapui = require("dapui")
 local dap_go = require("dap-go")
