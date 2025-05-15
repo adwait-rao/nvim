@@ -13,18 +13,28 @@ return {
   {
     "mfussenegger/nvim-dap"
   },
+
+  {
+    "rcarriga/nvim-dap-ui",
+    dependencies = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" },
+    config = function(_, opts)
+      require("dapui").setup(opts)
+    end
+  },
+
   {
     "leoluz/nvim-dap-go",
     ft = "go",
     dependencies = "mfussenegger/nvim-dap",
-    config = function (_, opts)
+    config = function(_, opts)
       require("dap-go").setup(opts)
     end
   },
+
   {
     "nvimtools/none-ls.nvim",
     event = "VeryLazy",
-    opts = function ()
+    opts = function()
       return require "configs.null-ls"
     end
   },
@@ -44,17 +54,17 @@ return {
       "javascript", "typescript", "javascriptreact", "typescriptreact", "html"
     },
 
-    config = function ()
+    config = function()
       require("nvim-ts-autotag").setup()
     end
   },
 
   {
-  	"nvim-treesitter/nvim-treesitter",
-  	opts = {
-  		ensure_installed = {
-  			"lua", "html", "css", "typescript", "tsx"
-  		},
-  	},
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
+        "lua", "html", "css", "typescript", "tsx"
+      },
+    },
   },
 }
