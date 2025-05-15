@@ -34,7 +34,7 @@ Before installing this configuration, ensure you have the following software ins
 
 1.  **Clone the Repository:**
     ```bash
-    git clone [https://github.com/adwait-rao/nvim](https://github.com/adwait-rao/nvim) ~/.config/nvim
+    git clone https://github.com/adwait-rao/nvim ~/.config/nvim
     ```
     This will clone the repository into your Neovim configuration directory.
 
